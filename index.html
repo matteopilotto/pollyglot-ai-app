@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <section class="header-container">
+                <div class="overlay-container">
+                    <img src="./assets/parrot.png" alt="logo" class="logo">
+                    <div class="header-text-div">
+                        <h1 class="title"> PollyGlot</h1>
+                        <p class="subtitle">Perfect Translation Every Time</p>
+                    </div>
+                </div>
+            </section>
+            <section class="translation-section">
+                <form class="translation-form">
+                    <h3>Text to translate</h3>
+                    <textarea class="text-area"></textarea>
+                    <div class="languages-container">
+                        <h3>Select language</h3>
+                        <div class="radio-item">
+                            <input type="radio" id="french" name="language" value="French">
+                            <label for="french">French <img src="./assets/fr-flag.png"></label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="spanish" name="language" value="Spanish">
+                            <label for="spanish">Spanish <img src="./assets/sp-flag.png"></label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="japanese" name="language" value="Japanese">
+                            <label for="spanish">Japanese <img src="./assets/jpn-flag.png"></label>
+                        </div>
+                    </div>
+                    <div class="translated-text-container">
+                        <h3>Your translation</h3>
+                        <textarea class="translated-text-area" disabled></textarea>
+                    </div>
+                    <div class="translated-btn-container">
+                        <button class="translate-btn">Translate</button>
+                    </div>
+                    <div class="reset-btn-container">
+                        <button class="reset-btn">Start Over</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
